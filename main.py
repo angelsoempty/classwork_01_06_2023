@@ -1,10 +1,3 @@
-def palindrome(slovo):
-    slovo = slovo.replace(' ', '').lower()
-    reversed_slovo = slovo[::-1]
-    if slovo == reversed_slovo:
-        print('Слово є паліндромом')
-    else:
-        print('Слово не є паліндромом')
-
-slovo = input('Введіть слово: ')
-palindrome(slovo)
+lst = [1, 2, 3, 4, 5, 6]
+even_numbers = [i for i in lst if i % 2 == 0]
+print(f'Парні числа {even_numbers}')
