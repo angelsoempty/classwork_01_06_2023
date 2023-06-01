@@ -1,9 +1,10 @@
-def filter_python_strings(strings):
-    python_strings = [string for string in strings if "Python" in string]
-    return python_strings
-input_strings = input('Введіть рядки: ').split()
-filtered_strings = filter_python_strings(input_strings)
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def get_info(self):
+        print("Ім'я:", self.name)
+        print("Вік:", self.age)
 
-print('Список рядків що містять слово Python: ')
-for string in filtered_strings:
-    print(string)
+student1 = Student("Gleb", 17)
+student1.get_info()
