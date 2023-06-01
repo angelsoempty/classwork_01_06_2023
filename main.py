@@ -1,7 +1,6 @@
-a = int(input('Введіть перше число: '))
-b = int(input('Введіть друге число: '))
-
 sum = 0
-for i in range(a, b + 1):
-    sum += i
-print(f'Сума чисел діапазону {sum}')
+
+for i in range(1, 101):
+    if i % 2 == 0:
+        sum += i
+print(f'Сума парних чисел в діапазоні 1 до 100 {sum}')
